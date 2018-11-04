@@ -20,13 +20,16 @@ X=[1 1 2 2 1; % first row is the x-coordinate
     1 2 2 1 1]; % second row is the y-coordinate
 
 %Duration INPUT YOUR DURATION
-num_of_via_points = 4;
-loop_back = true; % true if the origin and final points are the same
-if loop_back
+if X(1,1)==X(1,end) && X(2,1)==X(2,end)
+    loop_back = true; % loop_back true if origin and final points are same
+    num_of_via_points = length(X) - 1;
     num_of_segments = num_of_via_points;
 else
+    loop_back = false;
+    num_of_via_points = length(X);
     num_of_segments = num_of_via_points - 1;
 end
+
 duration_time = 10; % Specify how long the trajectory lasts
 duration_per_segments = duration_time / num_of_segments;
 duration = ones(1, num_of_segments) * duration_per_segments;
