@@ -17,16 +17,16 @@ close all; clear all
 %Inputs
 %Select type of Motion by UNCOMMENTING the desired scheme 
 % scheme='cubic';
- scheme='quintic';
-% scheme='trapezoidal';
+% scheme='quintic';
+scheme='trapezoidal';
 
 %Duration
-tf=5;  %MODIFY, duration time in seconds
+tf=6;  %MODIFY, duration time in seconds
 step=0.01; %MODIFY if you want more configurations being shown
 
 %Initial and Final Configurations
-theta_0=[10 30]; %MODIFY, joint angles for initial configurations
-theta_f=[80 60]; %MODIFY, joint angles for final confirations
+theta_0=[-150.6426 90.3837]; %MODIFY, joint angles in degs for initial configurations
+theta_f=[44.6652 34.5471]; %MODIFY, joint angles in degs for final confirations
 
 %Plotting Graphs
 n=length(theta_0); %Number of joints
