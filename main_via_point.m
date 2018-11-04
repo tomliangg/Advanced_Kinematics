@@ -16,11 +16,11 @@ L1=1.6; L2=1.4; %Lengths of Links MODIFY
  config=-1; %Elbow up 
 
 %Inverse kinematics of initial configuration  %INPUT YOUR POINTS
-X=[1 1 1 1 1 1.25 1.50 1.75 2 2 2 2 2 1.75 1.50 1.25 1; % first row is the x-coordinate
-    1 1.25 1.50 1.75 2 2 2 2 2 1.75 1.50 1.25 1 1 1 1 1]; % second row is the y-coordinate
+X=[1 1 2 2 1; % first row is the x-coordinate
+    1 2 2 1 1]; % second row is the y-coordinate
 
 %Duration INPUT YOUR DURATION
-num_of_via_points = 16;
+num_of_via_points = 4;
 loop_back = true; % true if the origin and final points are the same
 if loop_back
     num_of_segments = num_of_via_points;
