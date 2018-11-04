@@ -40,7 +40,7 @@ figure; FK_test2(position*pi/180,L1,L2)
 plot(X(1,:), X(2,:),'r.'); 
 figure;
 h=plot(time, position(1,:), 'b', time, position(2,:), 'r', time, velocity(1,:), 'b:',  time, velocity(2,:), 'r:', time, acceleration(1,:), 'b-.', time, acceleration(2,:), 'r-.');
-legend(h(1:2:end),'position Joint 1 (deg)', 'position Joint 2 (deg)', 'velocity Joint 1 (deg/s)', 'velocity Joint 2 (deg/s)', 'acceleration Joint 1 (deg/s^2)' , 'acceleration Joint 2 (deg/s^2)',4) 
+legend(h(1:2:end),'position Joint 1 (deg)', 'position Joint 2 (deg)', 'velocity Joint 1 (deg/s)', 'velocity Joint 2 (deg/s)', 'acceleration Joint 1 (deg/s^2)' , 'acceleration Joint 2 (deg/s^2)','Location', 'SouthEast') 
 xlabel('time (s)','fontsize',18);
 ylabel('Disp. (deg)    Vel. (deg/sec)    Acc. (deg/sec^2)','fontsize',18);
 set(gca,'FontSize',16)
