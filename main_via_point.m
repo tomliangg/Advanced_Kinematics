@@ -30,7 +30,7 @@ else
     num_of_segments = num_of_via_points - 1;
 end
 
-duration_time = 10; % Specify how long the trajectory lasts
+duration_time = 10; % MODIFY, time in seconds
 duration_per_segments = duration_time / num_of_segments;
 duration = ones(1, num_of_segments) * duration_per_segments;
 
