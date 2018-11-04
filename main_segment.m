@@ -21,12 +21,12 @@ close all; clear all
 % scheme='trapezoidal';
 
 %Duration
-tf=5;  %MODIFY
+tf=5;  %MODIFY, duration time in seconds
 step=0.01; %MODIFY if you want more configurations being shown
 
 %Initial and Final Configurations
-theta_0=[10 30]; %MODIFY
-theta_f=[80 60]; %MODIFY
+theta_0=[10 30]; %MODIFY, joint angles for initial configurations
+theta_f=[80 60]; %MODIFY, joint angles for final confirations
 
 %Plotting Graphs
 n=length(theta_0); %Number of joints
